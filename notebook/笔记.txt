@@ -1,0 +1,58 @@
+1、IT架构
+- 客户行为数据 --> 中间数据 --> 数据应用
+- android/IOSsdk/JSsdk/RestApi 
+	- -(DNS)-> Proxy Server 
+		- --> 按地域/按业务/按主从/log服务器
+			- --> 消息队列Kafka -->Strom分布式实时计算 --> Hbase --> redis
+			- --> 分布式Hadoop（HDFS、MR） --> 中间处理型数据库(hive、kylin、impala等)
+				- --> 数据库（关系型、非关系型、主从）--> web/终端/......
+		
+
+2、业务架构
+- 数据源 --> 数据收集&录入 --> 数据过滤&分类 --> 数据分析&建模 --> 数据交付&可视化 --> 消费者/数据应用
+	- 数据再利用&数据重构&数据二次处理
+
+3、名词
+- 操作型源系统
+	- 记录地操作型系统，用于获取业务事务
+	- 一般不维护历史信息
+- DW（data warehousing）数据仓库
+- EDW（enterprise data warehousing）企业数据仓库
+- BI（business intelligence）商业智能
+- ODS（Operational Data Store）操作数据存储
+- DM（Data Market）
+- ETL（Extract Transformation and Load）：获取--转换--加载，清洗/合并/复制--事实表/维度表
+- 建模思想
+	- 事实建模：产品维度、商品维度、日期维度、销售维度
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
